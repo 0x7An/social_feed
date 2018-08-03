@@ -13,13 +13,14 @@ routes.post('/signin', controllers.authController.signin);
 // Auth Routes
 routes.use(authMidleware);
 
+// User
+routes.put('/users', controllers.userController.update);
+
 // Tweets
 routes.post('/tweets', controllers.tweetController.create);
 routes.delete('/tweets/:id', controllers.tweetController.destroy);
 
-routes.get('/tweets', (req, res) => res.send('OK'));
-
-// User
-routes.put('/users', controllers.userController.update);
+// Likes
+routes.post('/like/:id', controllers.likeController.toogle);
 
 module.exports = routes;
