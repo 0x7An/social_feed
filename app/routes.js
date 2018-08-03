@@ -19,4 +19,7 @@ routes.delete('/tweets/:id', controllers.tweetController.destroy);
 
 routes.get('/tweets', (req, res) => res.send('OK'));
 
+// User
+routes.put('/users', controllers.userController.update);
+
 module.exports = routes;
