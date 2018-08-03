@@ -17,6 +17,6 @@ app.use(bodyParser.json());
 
 app.use('/api', require('./app/routes'));
 
-app.use(Raven.errorHandler);
+// app.use(Raven.errorHandler);
 
 app.listen('3000');
