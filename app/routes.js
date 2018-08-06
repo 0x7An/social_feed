@@ -20,6 +20,10 @@ routes.put('/users', controllers.userController.update);
 routes.post('/tweets', controllers.tweetController.create);
 routes.delete('/tweets/:id', controllers.tweetController.destroy);
 
+// Follow
+routes.post('/follow/:id', controllers.followController.follow);
+routes.delete('/unfollow/:id', controllers.followController.unfollow);
+
 // Likes
 routes.post('/like/:id', controllers.likeController.toogle);
 
