@@ -13,8 +13,10 @@ routes.post('/signin', controllers.authController.signin);
 // Auth Routes
 routes.use(authMidleware);
 
-// User
+// Users
+routes.get('/users/me', controllers.userController.me);
 routes.put('/users', controllers.userController.update);
+routes.get('/feed', controllers.userController.feed);
 
 // Tweets
 routes.post('/tweets', controllers.tweetController.create);
