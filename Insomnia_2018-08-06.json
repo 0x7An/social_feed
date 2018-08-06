@@ -1,0 +1,434 @@
+{
+	"_type": "export",
+	"__export_format": 3,
+	"__export_date": "2018-08-06T21:22:39.209Z",
+	"__export_source": "insomnia.desktop.app:v6.0.2",
+	"resources": [
+		{
+			"_id": "wrk_b4b393040fdc409db5ddbc5835c08112",
+			"created": 1533053814055,
+			"description": "",
+			"modified": 1533053814055,
+			"name": "Insomnia",
+			"parentId": null,
+			"_type": "workspace"
+		},
+		{
+			"_id": "env_eb261a12348e46c9a997cab1a272bda0",
+			"color": null,
+			"created": 1533053814092,
+			"data": {
+				"base_url": "http://localhost:3000/api",
+				"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjViNjRkNzlkYzE4MjMxODA1YTg2YzA2MiIsImlhdCI6MTUzMzU4MTU3OCwiZXhwIjoxNTMzNjY3OTc4fQ.tAtm2hRk0hN0oXWfW7X1zobre63wwkUER_3-_ASTijQ"
+			},
+			"isPrivate": false,
+			"metaSortKey": 1533053814092,
+			"modified": 1533581592688,
+			"name": "New Environment",
+			"parentId": "wrk_b4b393040fdc409db5ddbc5835c08112",
+			"_type": "environment"
+		},
+		{
+			"_id": "jar_afd8b506ed4e4932b5d9d9d1c1424772",
+			"cookies": [],
+			"created": 1533053814095,
+			"modified": 1533253224902,
+			"name": "Default Jar",
+			"parentId": "wrk_b4b393040fdc409db5ddbc5835c08112",
+			"_type": "cookie_jar"
+		},
+		{
+			"_id": "fld_4e842afc2caf4168936fbf9b361cff8a",
+			"created": 1533249451185,
+			"description": "",
+			"environment": {},
+			"metaSortKey": -1533249451185,
+			"modified": 1533249451185,
+			"name": "Tweets",
+			"parentId": "wrk_b4b393040fdc409db5ddbc5835c08112",
+			"_type": "request_group"
+		},
+		{
+			"_id": "fld_7cc2c0cc8b264f34a72061fd92119f46",
+			"created": 1533329756779,
+			"description": "",
+			"environment": {},
+			"metaSortKey": -1533290516889.5,
+			"modified": 1533580505892,
+			"name": "User",
+			"parentId": "wrk_b4b393040fdc409db5ddbc5835c08112",
+			"_type": "request_group"
+		},
+		{
+			"_id": "fld_c05dc02e05074d82928f5d8db5b69730",
+			"created": 1533331582594,
+			"description": "",
+			"environment": {},
+			"metaSortKey": -1533331582594,
+			"modified": 1533331582594,
+			"name": "LIke",
+			"parentId": "wrk_b4b393040fdc409db5ddbc5835c08112",
+			"_type": "request_group"
+		},
+		{
+			"_id": "fld_dda355f105224726bdd1c799b4e33909",
+			"created": 1533580366967,
+			"description": "",
+			"environment": {},
+			"metaSortKey": -1533580366967,
+			"modified": 1533580366967,
+			"name": "Follow",
+			"parentId": "wrk_b4b393040fdc409db5ddbc5835c08112",
+			"_type": "request_group"
+		},
+		{
+			"_id": "fld_ecafd05ad6f1400cb7e0dd4fad7e8586",
+			"created": 1533580526965,
+			"description": "",
+			"environment": {},
+			"metaSortKey": -1533580526965,
+			"modified": 1533580526965,
+			"name": "Auth",
+			"parentId": "wrk_b4b393040fdc409db5ddbc5835c08112",
+			"_type": "request_group"
+		},
+		{
+			"_id": "req_6cdcc67ab44c4b2eb00d51edde100300",
+			"authentication": {
+				"prefix": "",
+				"token": "{{ token  }}",
+				"type": "bearer"
+			},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n  \"content\": \"My 2 tweet\"\n}"
+			},
+			"created": 1533328614961,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_2e72a6de250f45e4a265e5e0bc0d4490",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1533328614961,
+			"method": "POST",
+			"modified": 1533590321551,
+			"name": "Create",
+			"parameters": [],
+			"parentId": "fld_4e842afc2caf4168936fbf9b361cff8a",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}/tweets",
+			"_type": "request"
+		},
+		{
+			"_id": "req_4f2c63860a93482cbd209284d0e03fc6",
+			"authentication": {
+				"prefix": "",
+				"token": "{{ token  }}",
+				"type": "bearer"
+			},
+			"body": {
+				"mimeType": "application/json",
+				"text": ""
+			},
+			"created": 1533329098438,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_2e72a6de250f45e4a265e5e0bc0d4490",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1533243832750.5,
+			"method": "DELETE",
+			"modified": 1533581670268,
+			"name": "Delete",
+			"parameters": [],
+			"parentId": "fld_4e842afc2caf4168936fbf9b361cff8a",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}/tweets/5b64be82bda54a6bea0afd31",
+			"_type": "request"
+		},
+		{
+			"_id": "req_6542d1316d5d443e85bc3ff42a2a1c15",
+			"authentication": {
+				"prefix": "",
+				"token": "{{ token  }}",
+				"type": "bearer"
+			},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"name\": \"Anderson Neo\",\n\t\"username\": \"andersonneo\",\n\t\"password\": \"hunter2\",\n\t\"confirmPassword\": \"hunter2\"\n}"
+			},
+			"created": 1533329784155,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_a496df861c484985b1e3c00372d56f82",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1533329784155,
+			"method": "PUT",
+			"modified": 1533581796952,
+			"name": "Update",
+			"parameters": [],
+			"parentId": "fld_7cc2c0cc8b264f34a72061fd92119f46",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}/users",
+			"_type": "request"
+		},
+		{
+			"_id": "req_fcb5a5ee7d4e4ef1a984f5e1e7fca672",
+			"authentication": {
+				"prefix": "",
+				"token": "{{ token  }}",
+				"type": "bearer"
+			},
+			"body": {},
+			"created": 1533581532571,
+			"description": "",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1533581532571,
+			"method": "GET",
+			"modified": 1533590308459,
+			"name": "Me",
+			"parameters": [],
+			"parentId": "fld_7cc2c0cc8b264f34a72061fd92119f46",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}/users/me",
+			"_type": "request"
+		},
+		{
+			"_id": "req_0acf6c985d824acfb47bb7050feb3ad6",
+			"authentication": {
+				"prefix": "",
+				"token": "{{ token  }}",
+				"type": "bearer"
+			},
+			"body": {},
+			"created": 1533581989886,
+			"description": "",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1533581989886,
+			"method": "GET",
+			"modified": 1533590309285,
+			"name": "Feed",
+			"parameters": [],
+			"parentId": "fld_7cc2c0cc8b264f34a72061fd92119f46",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}/feed",
+			"_type": "request"
+		},
+		{
+			"_id": "req_f828e94d60ca4a09a1da358a258e7f38",
+			"authentication": {
+				"prefix": "",
+				"token": "{{ token  }}",
+				"type": "bearer"
+			},
+			"body": {
+				"mimeType": "application/json",
+				"text": ""
+			},
+			"created": 1533331590296,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_20ccaf28193e476ea762d34cb60f2cb6",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1533331590296,
+			"method": "POST",
+			"modified": 1533580358177,
+			"name": "Like",
+			"parameters": [],
+			"parentId": "fld_c05dc02e05074d82928f5d8db5b69730",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}/like/5b64c8b88ad3687940be1a87",
+			"_type": "request"
+		},
+		{
+			"_id": "req_0e53bac24f3a44d1a40467f9f16c3952",
+			"authentication": {
+				"prefix": "",
+				"token": "{{ token  }}",
+				"type": "bearer"
+			},
+			"body": {
+				"mimeType": "application/json",
+				"text": ""
+			},
+			"created": 1533580370431,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_20ccaf28193e476ea762d34cb60f2cb6",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1533330687225.5,
+			"method": "POST",
+			"modified": 1533580540077,
+			"name": "Create",
+			"parameters": [],
+			"parentId": "fld_dda355f105224726bdd1c799b4e33909",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}/follow",
+			"_type": "request"
+		},
+		{
+			"_id": "req_0333b7b2935e4b018576a60bb0b42a49",
+			"authentication": {
+				"prefix": "",
+				"token": "{{ token  }}",
+				"type": "bearer"
+			},
+			"body": {
+				"mimeType": "application/json",
+				"text": ""
+			},
+			"created": 1533580407326,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_20ccaf28193e476ea762d34cb60f2cb6",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1533330235690.25,
+			"method": "DELETE",
+			"modified": 1533580499506,
+			"name": "Delete",
+			"parameters": [],
+			"parentId": "fld_dda355f105224726bdd1c799b4e33909",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}/like/5b64c8b88ad3687940be1a87",
+			"_type": "request"
+		},
+		{
+			"_id": "req_a4500d3e85ce49a2994fcef2c45d485f",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"name\": \"Anderson\",\n\t\"username\": \"anderson\",\n\t\"email\": \"anderson@gmail.com\",\n\t\"password\": \"hunter2\"\n}"
+			},
+			"created": 1533062785042,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_de4e30b8e2ae47f1b370cdbf6f285e6e",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1533159050590,
+			"method": "POST",
+			"modified": 1533590515204,
+			"name": "Signup",
+			"parameters": [],
+			"parentId": "fld_ecafd05ad6f1400cb7e0dd4fad7e8586",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}/signup",
+			"_type": "request"
+		},
+		{
+			"_id": "req_b5a4aec5499e484095f0733e370e30f7",
+			"authentication": {
+				"prefix": "",
+				"token": "{{ token  }}",
+				"type": "bearer"
+			},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"email\": \"anderson@gmail.com\",\n\t\"password\": \"hunter2\"\n}"
+			},
+			"created": 1533159050540,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_3556b24752de49f79badb6eb8c1b583c",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1533159050540,
+			"method": "POST",
+			"modified": 1533590515902,
+			"name": "Signin",
+			"parameters": [],
+			"parentId": "fld_ecafd05ad6f1400cb7e0dd4fad7e8586",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}/signin",
+			"_type": "request"
+		}
+	]
+}
